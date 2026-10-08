@@ -1,0 +1,71 @@
+﻿﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Svatební pozvánka</title>
+    <meta property="og:image" content="https://github.com/sylvias-invites/invitationforyou/blob/main/heart.png">
+    <meta name="twitter:image" content="https://github.com/sylvias-invites/invitationforyou/blob/main/heart.png">
+    <meta property="og:title" content="Naše svatba">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=1.13">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+    
+<body>
+
+    <!-- 1. ÚVODNÍ STRÁNKA (STÍRACÍ) -->
+    <div class="scratch-screen" id="scratch-screen">
+        <h1 class="main-title" id="main-title">Něco pro tebe mám</h1>
+        
+        <div class="heart-container">
+            <!-- Text pod stírací vrstvou -->
+            <div class="reveal-text">
+                <h2>Srdečně tě zveme na naši svatbu</h2>
+                <p>
+                        <span id="wedding-date" class="date">07. 07. 2027</span>
+                    </p>
+            </div>
+            
+            <!-- Stírací vrstva -->
+            <canvas id="scratch-canvas" width="320" height="350"></canvas>
+        </div>
+
+        <p class="instruction" id="instruction">Setři srdíčko</p>
+        
+        <button class="next-btn" id="next-btn" onclick="openDetails()">Vstoupit na pozvánku &rarr;</button>
+    </div>
+
+    <!-- 2. VNITŘNÍ STRÁNKA (DETAILNÍ INFORMACE) -->
+    <div class="content-screen" id="content-screen">
+        <h2 class="content-subtitle">Budeme se brát!</h2>
+        
+        <p class="content-text">
+            Srdečně vás zveme, abyste s námi prožili náš svatební den plný lásky, radosti a dobrého jídla.
+        </p>
+
+        <div class="details-box">
+            <div class="details-item"><strong>Kdy:</strong> 7. června 2027 </div>
+            <div class="details-item"><strong>Kde:</strong> Zámek Teplice</div>
+            <div class="details-item"><strong>Dresscode:</strong> Letní elegantní</div>
+        </div>
+
+        <p class="content-text" style="font-size: 0.9rem; font-style: italic;">
+            Prosíme o potvrzení účasti do 30. dubna.
+        </p>
+    </div>
+
+    <!-- Propojení na externí JavaScript soubor -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js?v=1.13"></script>
+    <!-- Animovaná pixelová kočička -->
+    <!-- img src="cat.png" class="pixel-cat" alt="Kočička"> -->
+    <pixel-cat>
+    <img src="walking-cat.gif" alt="">
+</pixel-cat>
+</body>
+</html>
