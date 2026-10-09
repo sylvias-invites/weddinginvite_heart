@@ -48,7 +48,7 @@ function initCanvas() {
 
         gCtx.drawImage(heartImg, 0, 0, w, h);
         gCtx.globalCompositeOperation = "source-in";
-        gCtx.fillStyle = "#ffe7eb";
+        gCtx.fillStyle = "#EA98A5";
         gCtx.fillRect(0, 0, w, h);
 
         // 2. Nastavení zlatého podkladu pro text
@@ -181,7 +181,7 @@ function revealEverything() {
                 particleCount: 12,
                 spread: 60,
                 origin: { x: 0.2, y: 0.6 }, // Výstřel zleva
-                colors: ['#cb7f8c', '#ffdce2', '#5B7065', '#ffffff'],
+                colors: ['#B41313', '#ffdce2', '#5B7065', '#ffffff'],
                 shapes: ['heart', diamond],
                 scalar: 1.2
             });
@@ -190,7 +190,7 @@ function revealEverything() {
                 particleCount: 12,
                 spread: 60,
                 origin: { x: 0.8, y: 0.6 }, // Výstřel zprava
-                colors: ['#cb7f8c', '#ffdce2', '#5B7065', '#ffffff'],
+                colors: ['#B41313', '#ffdce2', '#5B7065', '#ffffff'],
                 shapes: ['heart', diamond],
                 scalar: 1.2
             });
